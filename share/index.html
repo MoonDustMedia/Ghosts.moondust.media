@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta viewport="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Language" content="en">
+    <script>
+        window.onload = function() {
+            // Check if we need to redirect to the main page or app store
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            var isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+            var isAndroid = /android/i.test(userAgent);
+            if (isIOS) {
+                document.getElementById("ios").style.display = "unset";
+                //window.location.href = "https://apps.apple.com/us/app/appId";
+            } else {
+                //
+                //window.location.href = "/";
+            }
+        }
+    </script>
+</head>
+<body style="background-color:black;">
+    <a href="https://apps.apple.com/us/app/ghosts/id1533949783" id="ios" style="display: none;">
+        <image src="download_appstore.svg" style="width: 70%; display: block; margin-left: auto; margin-right: auto;"/>
+    </a>
+</body>
+</html>
