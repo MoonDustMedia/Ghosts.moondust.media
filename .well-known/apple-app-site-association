@@ -5,7 +5,7 @@
              "appIDs": ["9LGG5VF45Q.media.moondust.peeps"],
              "components": [
                {
-                  "/": "/share",
+                  "/": "/share/",
                   "comment": "Matches any URL with a path that starts with /share/ and has at least one character after"
                }
              ]
