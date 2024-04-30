@@ -7,7 +7,7 @@
         // Check if this is a real 404 or a well known url
         var url = window.location.href;
         var urlParts = url.split("/");
-        if (urlParts[urlParts.length - 1] == "share") {
+        if (urlParts[urlParts.length - 2] == "share") {
             window.location.href = "/share";
         }
     </script>
